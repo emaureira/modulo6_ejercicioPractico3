@@ -1,0 +1,34 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Cardiología",
+            "precio": 80,
+            "descripcion": "Servicios relacionados con el corazón"
+        },
+        {
+            "id": 2,
+            "nombre": "Pediatría",
+            "precio": 70,
+            "descripcion": "Atención médica para niños"
+        },
+        {
+            "id": 3,
+            "nombre": "Ginecología",
+            "precio": 90,
+            "descripcion": "Atención médica para la salud femenina"
+        },
+        {
+            "id": 4,
+            "nombre": "Dermatología",
+            "precio": 75,
+            "descripcion": "Servicios para el cuidado de la piel"
+        },
+        {
+            "id": 5,
+            "nombre": "Medicina General",
+            "precio": 75,
+            "descripcion": "Medicina General"
+        }
+    ]
+}

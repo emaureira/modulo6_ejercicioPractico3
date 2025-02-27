@@ -1,0 +1,66 @@
+{
+    "equipoMedico": [
+        {
+            "id": 1,
+            "nombre": "Dr. Juan Pérez",
+            "especialidad": "Cardiología",
+            "horario": "Lunes a Viernes, 9:00 AM - 5:00 PM"
+        },
+        {
+            "id": 2,
+            "nombre": "Dra. María López",
+            "especialidad": "Pediatría",
+            "horario": "Martes y Jueves, 2:00 PM - 6:00 PM"
+        },
+        {
+            "id": 3,
+            "nombre": "Dr. Carlos Gómez",
+            "especialidad": "Ginecología",
+            "horario": "Lunes, Miércoles y Viernes, 10:00 AM - 4:00 PM"
+        },
+        {
+            "id": 4,
+            "nombre": "Dra. Ana Ramírez",
+            "especialidad": "Dermatología",
+            "horario": "Martes a Sábado, 8:00 AM - 1:00 PM"
+        },
+        {
+            "id": 5,
+            "nombre": "Dr. Felipe Rodriguez",
+            "especialidad": "Medicina general",
+            "horario": "Martes a Sábado, 8:00 AM - 1:00 PM"
+        }
+    ],
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Cardiología",
+            "precio": 80,
+            "descripcion": "Servicios relacionados con el corazón"
+        },
+        {
+            "id": 2,
+            "nombre": "Pediatría",
+            "precio": 70,
+            "descripcion": "Atención médica para niños"
+        },
+        {
+            "id": 3,
+            "nombre": "Ginecología",
+            "precio": 90,
+            "descripcion": "Atención médica para la salud femenina"
+        },
+        {
+            "id": 4,
+            "nombre": "Dermatología",
+            "precio": 75,
+            "descripcion": "Servicios para el cuidado de la piel"
+        },
+        {
+            "id": 5,
+            "nombre": "Medicina General",
+            "precio": 75,
+            "descripcion": "Medicina General"
+        }
+    ]
+}
