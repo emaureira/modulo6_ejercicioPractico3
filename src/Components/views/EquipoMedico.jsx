@@ -14,7 +14,7 @@ function EquipoMedico() {
             setLoading(true);
             setError(null);
             try {
-                const data = await fetchData('https://randomuser.me/api');
+                const data = await fetchData('https://randomuser.me/api/?results=6');
                 const mappedDoctors = data.map(user => ({
                     nombre: `${user.name.first} ${user.name.last}`,
                     especialidad: user.gender === 'male' ? 'Médico General' : 'Médica General',
