@@ -297,13 +297,21 @@ function Citas() {
                                 </div>
                                 <div>
                                 Ubicación:
-                    {cita.location ? (
-                        <p>
-                            Latitud: {cita.location.lat.toFixed(4)}, Longitud: {cita.location.lon.toFixed(4)}
-                            </p>
-                        ) : (
-                         <p>No disponible</p>
-                        )}
+                                    {cita.location ? (
+                                    <p>
+                                        <a 
+                                            href="https://www.openstreetmap.org/#map=18/'{cita.location.lat.toFixed(4)}'/'{cita.location.lon.toFixed(4)}'" 
+                                            target="_blank"
+                                            className='mx-3'
+                                        >
+                                            Ver mapa
+                                        </a>
+                                       
+                                        Latitud: {cita.location.lat.toFixed(4)}, Longitud: {cita.location.lon.toFixed(4)}
+                                        </p>
+                                    ) : (
+                                    <p>No disponible</p>
+                                    )}
                                 </div>
                                 
                             </div>

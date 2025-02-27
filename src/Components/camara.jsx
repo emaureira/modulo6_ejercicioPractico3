@@ -68,7 +68,7 @@ const Camara = ({ onCapture }) =>{
            {error && <p style={{ color: 'red' }}>{error}</p>}
             <video ref={videoRef} autoPlay playsInline style={{ width : "25%"}} />
             <button id="foto" onClick={handleTakePhoto}>Tomar Foto</button>
-            <canvas ref={canvasRef} style={{ display: "block" }} />
+            <canvas ref={canvasRef} style={{ display: "none" }} />
         </div>
     )
 };
