@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types'; // Importamos PropTypes
+import PropTypes from 'prop-types';
 import DoctorCard from '../DoctorCard';
-import fetchData from '../../api';
+import fetchData from '../../apiexterna';
 
 function EquipoMedico() {
     const [doctors, setDoctors] = useState([]);
@@ -14,8 +14,13 @@ function EquipoMedico() {
             setLoading(true);
             setError(null);
             try {
-                const data = await fetchData('equipoMedico');
-                setDoctors(data);
+                const data = await fetchData('https://randomuser.me/api');
+                const mappedDoctors = data.map(user => ({
+                    nombre: `${user.name.first} ${user.name.last}`,
+                    especialidad: user.gender === 'male' ? 'Médico General' : 'Médica General',
+                    image: user.picture.large,
+                }));
+                setDoctors(mappedDoctors);
             } catch (err) {
                 setError(err);
             } finally {
@@ -61,7 +66,7 @@ function EquipoMedico() {
                         <DoctorCard
                             name={doctor.nombre}
                             specialty={doctor.especialidad}
-                            image={`https://via.placeholder.com/200x150/${Math.floor(Math.random() * 16777215).toString(16)}/ffffff?text=${doctor.nombre.split(' ')[0]}`} // placeholder con nombre del doctor
+                            image={doctor.image}
                         />
                     </div>
                 ))}
@@ -70,7 +75,6 @@ function EquipoMedico() {
     );
 }
 
-// Definimos los PropTypes para el componente EquipoMedico. Nuevamente, no recibe props del padre, por lo que esta vacío.
 EquipoMedico.propTypes = {};
 
 export default EquipoMedico;
