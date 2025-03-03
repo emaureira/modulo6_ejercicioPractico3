@@ -14,8 +14,8 @@ La aplicación está estructurada con los siguientes componentes principales:
 ## Cómo Ejecutar la Aplicación
 
 1.  Asegúrate de tener Node.js y npm (o yarn) instalados.
-2.  Clona el repositorio. (git clone https://github.com/emaureira/modulo6_ejeercicioPractico2.git) 
-3.  Navega al directorio del proyecto en tu terminal. (modulo6_ejeercicioPractico2)
+2.  Clona el repositorio. (git clone https://github.com/emaureira/modulo6_ejeercicioPractico3.git) 
+3.  Navega al directorio del proyecto en tu terminal. (modulo6_ejeercicioPractico3)
 4.  Instala las dependencias utilizando `npm install` o `yarn install`.
 5.  Inicia el servidor de desarrollo con `npm run dev` o `yarn start`.
 6.  Abre tu navegador y navega en localhost
@@ -39,4 +39,7 @@ Se crea en Home.jsx, un pequeño formulario para que guarden el nombre y la espe
 se utiliza IndexedDB con la libreria idb, se crea un archivo db.js para manejar la base de datos en IndexedDB y se agregan las funciones, de agregar, listartodo, eliminar y obtener una cita
 
 En citas.jsx importamos agregar, listar, eliminar de db.js
+
+## Equipo Medico
+
 
