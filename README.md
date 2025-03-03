@@ -39,6 +39,8 @@ Se crea en Home.jsx, un pequeño formulario para que guarden el nombre y la espe
 se utiliza IndexedDB con la libreria idb, se crea un archivo db.js para manejar la base de datos en IndexedDB y se agregan las funciones, de agregar, listartodo, eliminar y obtener una cita
 
 En citas.jsx importamos agregar, listar, eliminar de db.js
+Se agrega la opción de tomar una foto con la camara del equipo y almacenarla
+Se agrega la opción de guardar la localizacion del paciente
 
 ## Equipo Medico
 Se utiliza una api externa: https://randomuser.me/api/?results=6
