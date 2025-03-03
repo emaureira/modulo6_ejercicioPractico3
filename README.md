@@ -1,6 +1,6 @@
 
 
-nombre: Edwin Maureira Toledo
+nombre Integrantes: Edwin Maureira Toledo, Carla Garcia, Felipe Rodriguez
 curso: frond end Corfo grupo 1
 Modulo 6 - Ejercicio Practico 2
 
@@ -41,5 +41,7 @@ se utiliza IndexedDB con la libreria idb, se crea un archivo db.js para manejar 
 En citas.jsx importamos agregar, listar, eliminar de db.js
 
 ## Equipo Medico
+Se utiliza una api externa: https://randomuser.me/api/?results=6
+para poder traer 6 medicos y se obtiene el nombre y una foto
 
 
